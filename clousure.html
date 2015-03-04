@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <script type="text/javascript">
+      function makeAdder(x) {
+        return function(y) {
+          return x + y;
+        };
+      }
+      var add5 = makeAdder(5);
+      var add10 = makeAdder(10)(5);      
+      alert(add5(2));
+      alert(add10);
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
