@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <script type="text/javascript">
+      var foo = function() {
+        var a = 3, b = 5; 
+
+        var bar = function() {
+          var b = 7, c = 11;
+          // a = 3, b = 7, c= 11
+          a += b + c;
+          // a = 21, b = 7, c = 11
+        };
+        // a = 3, b = 5, c = in not defined
+        bar();
+        // a = 21, b = 5
+      };      
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

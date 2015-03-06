@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <script type="text/javascript">
+      var Person = function(name) {
+        this.name = name;
+      };
+      
+      Person.prototype.doSomething = function(callback) {
+        callback.call(this);
+      };
+
+      function foo() {
+        alert(this.name);
+      };
+
+      var Alex = new Person("Alejandro");
+      Alex.doSomething(foo); 
+
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
