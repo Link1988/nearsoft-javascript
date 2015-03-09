@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="text/javascript">
+			var Animal = function(){
+				this.comer = function(){
+					return "El animal esta comiendo";
+				};
+				this.caminar = function(){
+					return "El animal esta caminando";
+				};
+				this.nombre = "hikuri";
+			};
+						
+			var Perro = function(){
+				this.olfatear = function(nombre){
+					return "El perro " + nombre + " esta olfateando";
+				};	
+				this.nombre = "mijares";
+			}
+			
+			perro.prototype = new Animal();
+			
+			var richi = new Perro();
+
+			var AnswerPrototype = {
+				get: function fn1(){
+					return this.val;
+				}
+			}
+			
+			function lAnswer(){};
+			lAnswer.prototype = AnswerPrototype;
+			lAnswer.prototype.get1 = function fn2(){};
+			this.lifeAnswer  = new lAnswer();
+		</script>
+	</head>
+	<body>
+	</body>	
+</html>
+			

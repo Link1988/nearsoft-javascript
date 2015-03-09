@@ -1,0 +1,94 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+			<script type="text/javascript">
+				/*function identify() {
+					return this.name.toUpperCase();
+				}
+				function speak() {
+					var greeting = "Hello, I'm " + identify.call( this );
+					console.log( greeting );
+				}
+				var me = {
+					name: "Kyle"
+				};
+				var you = {
+					name: "Reader"
+				};
+			
+				identify.call( me ); // KYLE
+				identify.call( you ); // READER
+				speak.call( me ); // Hello, I'm KYLE
+				speak.call( you ); // Hello, I'm READER
+				*/
+			
+			
+				/*function foo(num) {
+					console.log( "foo: " + num );
+					// keep track of how many times `foo` is called
+					this.count++;
+				}
+				foo.count = 0;
+				var i;
+				for (i=0; i<10; i++) {
+					if (i > 5) {
+						foo( i );
+					}
+				}*/
+			
+				/*var self = this;
+				function foo() {
+					console.log( this.a );
+				}
+				var obj = {
+					a: 2,
+					foo: foo
+				};
+			
+				var a = 3;
+				obj.foo();*/
+			
+				/*var self = this;
+			
+				var arguments = "Global scope arguments";
+			
+				function foo(something) {
+					console.log( this.a, something );
+					return this.a + something;
+				}
+				var obj = {
+					a: 2
+				};
+				var bar = function() {
+					return foo.apply( obj, arguments );
+				};
+				var b = bar( 3 ); // 2 3
+				console.log( b ); // 5*/
+			
+			
+				/*
+				//Hard binding
+				function foo() {
+					console.log( this.a );
+				}
+			
+				var obj = {
+					a : 2
+				};
+			
+				//var bar  = function(){
+					//foo.call(obj);
+				//};
+			
+				//the fancy way
+				var bar = foo.bind(obj);
+			
+				bar();*/
+			
+		</script>
+	</head>
+	<body>
+	</body>	
+</html>
+			
